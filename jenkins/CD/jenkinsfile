@@ -17,7 +17,7 @@ pipeline {
 
         stage('Start Container on Port 8082') {
             steps {
-                sh 'docker run -d --name ci-cd-demo -p 8082:80 my-own-image:latest'
+                sh 'docker run -d --name ci-cd-demo -p 8081:80 my-own-image:latest'
             }
         }
     }
